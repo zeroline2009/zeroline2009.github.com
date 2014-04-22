@@ -1,74 +1,349 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-cn"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Zeroline2009.github.com : " />
+	<link rel="stylesheet" href="www.cutesharkroam.com_files/bootstrap.css">
+	<link href="www.cutesharkroam.com_files/font-awesome.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    	<!--[if lt IE 9]>
+	      	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	      	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	      	<style type="text/css">
+			div.alert {
+				display:block;
+				padding-top:50px;
+			}
+	      	</style>
+      	<![endif]-->
 
-    <title>Zeroline2009.github.com</title>
+     
+
+      <style>
+      body,h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5 {
+      	font-family: "手札体-简","Microsoft YaHei",微软雅黑,华文细黑,"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif;
+      }
+
+      #introduction {
+      	color:#555;
+      }
+
+      .alert {
+      	display: none;
+      }
+
+      .jumbotron,.footer {
+      	background-color: #2489c5;
+      	color:#FFF;
+      }
+
+      .navbar-inverse {
+      	border:none;
+      }
+      
+      .navbar-inverse .navbar-nav>li>a {
+      	color: #ccc;
+      }
+
+      .navbar-inverse .navbar-brand {
+      	color: #FFF;
+      }
+
+      .jumbotron,.footer {
+      	position: relative;
+      }
+
+      .jumbotron:after,.footer:after {
+      	content: '';
+      	display: block;
+      	position: absolute;
+      	top:0;
+      	right: 0;
+      	bottom: 0;
+      	left: 0;
+      	opacity: .25;
+      	background-image: url(noise.png);
+      }
+
+      .caption h3, .production-description {
+      	text-align: center;
+      }
+      .caption {
+      	text-align: left;
+      }
+
+      .production-title {
+      	color:#428bca;
+      }
+
+      .footer {
+      	padding-top: 20px;
+      	padding-bottom: 20px;
+      	margin-top: 20px;
+      }
+
+      #comany_name {
+      	padding-bottom: 20px;
+      }
+
+      .thumbnail {
+       max-width: 310px;
+      }
+
+      #smart-card-system .thumbnail {
+        min-height: 500px;
+      }
+
+      #smart-card-cos .thumbnail {
+        min-height: 434px;
+      }
+
+      #mobile-internet .thumbnail {
+        min-height: 404px;
+      }
+
+      #page_jumbotron {
+      	padding-top: 100px;
+      }
+
+      #company_introduction {
+      	padding-top: 10px;
+      }
+
+      #company_production {
+      	padding-top: 50px;
+      }
+
+      #company_contact {
+      	padding-top: 50px;
+      }
+
+      .navbar-inverse .navbar-toggle {
+      	border-color: #FFF;
+      	color: #FFF;
+      }
+      </style>
+
   </head>
-
   <body>
+  	<div class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+  		<div class="container">
+  			<div class="navbar-header">
+  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			        	<span class="sr-only">Toggle navigation</span>
+			        	<i class="fa fa-bars fa-lg"></i>
+			      	</button>	
+  				<a class="navbar-brand" href="http://www.cutesharkroam.com/">立讯方</a>
+  			</div>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/zeroline2009">View on GitHub</a>
+  			<div class="navbar-collapse collapse">
+	  			<ul class="nav navbar-nav">
+	  				<li><a href="#page_jumbotron">首页</a></li>
+	  				<li><a href="#company_introduction">公司介绍</a></li>
+	  				<li><a href="#company_production">业务介绍</a></li>
+	  				<li><a href="#company_contact">联系方式</a></li>
+	  			</ul>
+	  		</div>
+  		</div>
+  	</div>
 
-          <h1 id="project_title">Zeroline2009.github.com</h1>
-          <h2 id="project_tagline"></h2>
+  	<div class="alert alert-danger container">
+  		<h2>您好！本网站在IE9及更低版本的IE浏览器上不能正常显示！推荐使用chrome、firefox或IE的最高版本进行浏览！</h2>
+  		<h2>This webstie can't be displayed well by IE! Please use chrome or firefox instead, thanks!</h2>
+  	</div>
 
-        </header>
-    </div>
+  	<div class="jumbotron" id="page_jumbotron">
+  		<div class="container">
+  			<h1 id="comany_name">江苏立讯方网络信息技术有限公司</h1>
+			<p>用智慧创造价值，用科技改变世界！</p>
+  		</div>
+  	</div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+  	<div id="introduction">
+  		<div class="container" id="company_introduction">
+  			<div class="page-header h1">公司介绍</div>
+  			<div class="row">
+  				<div class="col-sm-12 col-md-8">
+  					
+江苏立讯方网络信息技术有限公司（简称立讯方）成立于2013年，是一家致力于为客户提供基于智能卡、数据安全、移动互联网等领域解决方案并提供高端产品和技
+术的高科技企业。公司拥有智能卡、数据安全和移动互联网领域从业经验丰富的研发团队，能为客户提供全面、优质、快速的产品和解决方案，从而为客户创造价
+值！
+  				</div>
+  			</div>
+  		</div>
 
-<p>Th automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+  		<div class="container">
+  			<div class="page-header h1" id="company_production">业务介绍</div>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+  			<h2 class="production-line-name">智能卡系统</h2>
+  			<div class="row" id="smart-card-system">
+  				<div class="col-sm-6 col-md-4">
+  					<div class="thumbnail">
+  						<img data-src="holder.js/400x200" src="www.cutesharkroam.com_files/tsm.png">
+  						<div class="caption">
+  							<h3 class="production-title">TSM</h3>
+  							<p class="production-description">可信服务管理平台（简称TSM），是在移动支付领域一卡多应用场景下，为发卡方和应用方之间可信通道和服务而建立的安全个人化、应用发行及SE管理的综合服务平台，是完整移动支付体系的核心。TSM系统具备如下特点：</p>
+  							<ul>
+  								<li>动态加载和管理</li>
+  								<li>高安全管理等级</li>
+  								<li>统一管道和标准</li>
+                             <li>安全认证流程化</li>
+                             <li>高安全客户端安全控件</li>
+                             <li>支持多种通道应用管理</li>
+  							</ul>
+  						</div>
+  					</div>
+  				</div>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+  				<div class="col-sm-6 col-md-4">
+  					<div class="thumbnail">
+  						<img data-src="holder.js/300x200" src="www.cutesharkroam.com_files/onecard.png">
+  						<div class="caption">
+  							<h3 class="production-title">一卡通管理系统</h3>
+  							<p class="production-description">一卡通应用综合管理系统，支持13.56M非接触式智能卡和双界面移动支付卡，是集身份识别、小额消费、金融应用和信息服务于一体的信息化综合应用平台。可应用于校园、企业等多种封闭环境，也可扩展至如市政一卡通等开放环境。</p>
+  							<ul>
+  								<li>采用模块化设计，具有良好的扩展性和稳定性</li>
+  								<li>集中化的一卡通应用管理平台，可实现全省一卡通业务的统一管理</li>
+  								<li>整合原有业务和管理体系的独立性，实现各平台数据共享，提高工作效率。</li>
+  							</ul>
+  						</div>
+  					</div>
+  				</div>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+  				<div class="col-sm-6 col-md-4">
+  					<div class="thumbnail">
+  						<img data-src="holder.js/300x200" src="www.cutesharkroam.com_files/to.png">
+  						<div class="caption">
+  							<h3 class="production-title">运营商支撑</h3>
+  							<p class="production-description">凭借对通信智能卡技术的深入掌握，迅速为运营商和SP定制基于通信智能卡的增值业务后台支撑系统，帮助运营商拓展新业务，增加用户粘性。</p>
+  							<ul>
+  								<li>成熟稳定的短信网关通信实现</li>
+  								<li>运营商运营子系统的接口实现</li>
+  								<li>对接第三方支付接口</li>
+  							</ul>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+  			<h2 class="production-line-name">智能卡工具</h2>
+  			<div class="row">
+  				<div class="col-sm-6 col-md-4">
+  					<div class="thumbnail">
+  						<img data-src="holder.js/300x200" src="www.cutesharkroam.com_files/smartrunner.png">
+  						<div class="caption">
+  							<h3 class="production-title">SmartRunner</h3>
+                         <p class="production-description">面向智能卡行业的集成化自动测试平台</p>
+  							<ul>
+  								<li>采用强大的python语言编写测试脚本</li>
+  								<li>python语法和内建库100%支持</li>
+  								<li>完美支持脚本调试（断点、单步等）</li>
+  								<li>支持多种测试设备接口</li>
+  								<li>提供基于智能卡应用的常见算法库</li>
+  								<li>极大地提高了测试工程师的效率，降低测试成本</li>
+  							</ul>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+  			<h2 class="production-line-name">智能卡COS</h2>
+  			<div class="row" id="smart-card-cos">
+  				<div class="col-sm-6 col-md-4">
+  					<div class="thumbnail">
+  						<img data-src="holder.js/300x200" src="www.cutesharkroam.com_files/ukey.png">
+  						<div class="caption">
+  							<h3 class="production-title">USB Key</h3>
+                         <p class="production-description">基于国内多家主流USB Key芯片的全套USB Key解决方案</p>
+  							<ul>
+                             <li>提供OEM和技术外包</li>
+                             <li>硬件、COS、中间件迅速定制</li>
+  								<li>支持USB和SD等多种形态</li>
+  								<li>支持HID、CCID、Mass Storage等多种协议</li>
+  								<li>支持国密算法，可辅助迅速通过国密认证</li>
+  							</ul>
+  						</div>
+  					</div>
+  				</div>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+  				<div class="col-sm-6 col-md-4">
+  					<div class="thumbnail">
+  						<img data-src="holder.js/300x200" src="www.cutesharkroam.com_files/smartcard.png">
+  						<div class="caption">
+  							<h3 class="production-title">Smart Card</h3>
+  							<p class="production-description">承接各种智能卡COS的开发、行业应用开发；销售非接触式智能卡.</p>
+  							<ul>
+  								<li>Java Card COS开发，Applet开发</li>
+  								<li>金融IC卡，PBOC 3.0，可辅助通过银行卡检测中心认证</li>
+  								<li>销售非接触ISO 14443 Type A/B移动支付卡、Mifare 1卡</li>
+  							</ul>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+  			<h2 class="production-line-name">移动互联网</h2>
+  			<div class="row" id="mobile-internet">
+  				<div class="col-sm-6 col-md-4">
+  					<div class="thumbnail">
+  						<img data-src="holder.js/300x200" src="www.cutesharkroam.com_files/smartarea.png">
+  						<div class="caption">
+  							<h3 class="production-title">智慧商圈</h3>
+							<p class="production-description">智慧商圈业务是精简版的“大众点评”，为商圈、批发市场等场所提供移动互联网解决方案。通过智能手机客户端应用APP和智能商圈业务平台的结合，实现手机广告和电子优惠券业务的精准推送。同时，结合移动支付技术，完成O2O消费。</p>
+  						</div>
+  					</div>
+  				</div>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+  				<div class="col-sm-6 col-md-4">
+  					<div class="thumbnail">
+  						<img data-src="holder.js/300x200" src="www.cutesharkroam.com_files/web.png">
+  						<div class="caption">
+  							<h3 class="production-title">网站建设</h3>
+  							<ul>
+  								<li>政企网站建设</li>
+  								<li>网站制作</li>
+  								<li>营销型网站制作</li>
+  								<li>OA系统开发</li>
+  							</ul>
+  						</div>
+  					</div>
+  				</div>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+  				<div class="col-sm-6 col-md-4">
+  					<div class="thumbnail">
+  						<img data-src="holder.js/300x200" src="www.cutesharkroam.com_files/app.png">
+  						<div class="caption">
+  							<h3 class="production-title">移动客户端</h3>
+  							<p class="production-description">承接Android和iOS的手机客户端开发业务。</p>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
+  		<div class="container" id="company_contact">
+  			<div class="page-header h1">联系方式</div>
+  			<div class="row">
+                <div class="col-sm-6 col-md-4">Email:<a href="mailto:support@cutesharkroam.com">support@cutesharkroam.com</a></div>
+  				<div class="col-sm-6 col-md-4">QQ:19454794</div>
+  				<div class="col-sm-6 col-md-4">TEL:86-010-82936410</div>
+  			</div>
+  		</div>
+  	</div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+  	<footer class="footer">
+  		<div class="container">
+  			© 2013 江苏立讯方网络信息技术有限公司
+  		</div>
+  	</footer>
 
-    
+  <script src="www.cutesharkroam.com_files/jquery.js"></script>
+  <script src="www.cutesharkroam.com_files/bootstrap.js"></script>
 
-  </body>
-</html>
+
+
+</body></html>
